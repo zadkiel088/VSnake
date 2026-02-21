@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/debugOverlay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false"
+    android:focusable="false"
+    android:focusableInTouchMode="false">
+
+    <!-- Barres invisibles par défaut -->
+    <View
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_gravity="top"
+        android:background="#FF0000"
+        android:visibility="visible"
+        android:alpha="0" />
+
+    <View
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_gravity="bottom"
+        android:background="#FF0000"
+        android:visibility="visible"
+        android:alpha="0" />
+
+    <View
+        android:id="@+id/leftBar"
+        android:layout_width="25dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="#FF0000"
+        android:visibility="visible"
+        android:alpha="0" />
+
+    <View
+        android:id="@+id/rightBar"
+        android:layout_width="25dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:background="#FF0000"
+        android:visibility="visible"
+        android:alpha="0" />
+</FrameLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#000000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtInfo"
+            android:textSize="22sp"
+            android:textColor="#FFFFFF"
+            android:text="Available Devices"
+            android:elevation="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ListView
+            android:id="@+id/listDevices"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textColor="#FFFFFF"
+            android:layout_weight="1"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/btnRescan"
+            android:text="Search Devices"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:id="@+id/btnStartGame"
+            android:text="Play"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:elevation="50dp"/>
+
+    </LinearLayout>
+
+    <fr.eurecom.vsnake_test1.AccelerometerDebugOverlay
+        android:id="@+id/debugOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <Button
+        android:id="@+id/btnCalibrate"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="top|end"
+        android:background="#FFFFFF"
+        android:padding="8dp"
+        android:elevation="50dp"
+        android:clickable="true"/>
+
+</FrameLayout>

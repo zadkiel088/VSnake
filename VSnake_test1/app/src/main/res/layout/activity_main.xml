@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/gameContainer"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+    <fr.eurecom.vsnake_test1.GameView
+        android:id="@+id/gameView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageButton
+        android:id="@+id/pauseButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:layout_gravity="top|right"
+        android:background="@android:color/transparent"
+        android:src="@android:drawable/ic_media_pause" />
+
+</FrameLayout>
+
